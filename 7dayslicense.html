@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASH SENDER | 7 DAYS TRIAL</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="glass-grid"></div>
+    
+    <div class="corner-logo">
+        <span>FS</span>
+        <div class="pulse"></div>
+        <div class="badge">7 DAYS</div>
+    </div>
+
+    <div id="main-page" class="page visible">
+        <div class="glass-container">
+            <div class="header-glitch">
+                <h1 class="glitch" data-text="FLASH SENDER">FLASH SENDER</h1>
+                <h2>7 DAYS TRIAL ACCESS</h2>
+            </div>
+
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                    </div>
+                    <span class="terminal-title">root@7days-sender:~</span>
+                </div>
+
+                <div class="terminal-body">
+                    <div class="crypto-selection">
+                        <label class="cyber-radio">
+                            <input type="radio" name="crypto" value="USDT">
+                            <span class="radio-indicator"></span>
+                            <span class="crypto-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <circle cx="12" cy="12" r="10" fill="#26A17B"/>
+                                    <text x="12" y="16" text-anchor="middle" fill="white" font-size="10" font-weight="bold">$</text>
+                                </svg>
+                            </span>
+                            <span class="crypto-name">USDT</span>
+                        </label>
+                        <label class="cyber-radio">
+                            <input type="radio" name="crypto" value="BTC">
+                            <span class="radio-indicator"></span>
+                            <span class="crypto-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <circle cx="12" cy="12" r="10" fill="#F7931A"/>
+                                    <text x="12" y="16" text-anchor="middle" fill="white" font-size="10" font-weight="bold">₿</text>
+                                </svg>
+                            </span>
+                            <span class="crypto-name">BTC</span>
+                        </label>
+                    </div>
+
+                    <div class="network-selection" id="network-selection">
+                        <div class="input-label">SELECT NETWORK</div>
+                        <select id="network" disabled>
+                            <option value="">-- CHOOSE NETWORK --</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-label">RECIPIENT ADDRESS</div>
+                        <div class="input-wrapper">
+                            <input type="text" id="crypto-address" placeholder="0x..." disabled>
+                            <button id="paste-btn" disabled>
+                                <span class="btn-icon">⎘</span>
+                                PASTE
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-label">AMOUNT TO SEND</div>
+                        <input type="text" id="crypto-amount" placeholder="0.00" disabled>
+                    </div>
+
+                    <button id="send-btn" class="cyber-button" disabled>
+                        <span class="btn-text">EXECUTE TRANSACTION</span>
+                        <span class="btn-glitch"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="transaction-animation" class="hidden">
+        <div class="cyber-loader">
+            <div class="loader-circle"></div>
+            <div class="loader-progress" id="loader-progress"></div>
+            <div class="loader-percentage" id="percentage">0%</div>
+            <div class="loader-status">PROCESSING TRANSACTION</div>
+        </div>
+    </div>
+
+    <div id="notification-container"></div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

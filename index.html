@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASH SENDER | License Activation</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <div class="bs_loader">
+        <div class="loader-code">
+            <span class="code-line">> SYSTEM BOOT SEQUENCE INITIATED</span>
+            <span class="code-line">> LOADING SECURITY PROTOCOLS...</span>
+            <span class="code-line">> CONNECTING TO MAINFRAME...</span>
+        </div>
+    </div>
+    
+    <div class="background-animation"></div>
+    <div class="glass-grid"></div>
+    
+    <div id="license-page" class="page">
+        <div class="glass-container">
+            <div class="header-glitch">
+                <h1 class="glitch" data-text="FLASH SENDER">FLASH SENDER</h1>
+                <h2>LICENSE ACTIVATION <span class="status-indicator status-online"></span>ONLINE</h2>
+            </div>
+            
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                    </div>
+                    <span class="terminal-title">root@flash-sender:~</span>
+                </div>
+                
+                <div class="terminal-body">
+                    <select id="license-type">
+                        <option value="">SELECT LICENSE TYPE</option>
+                        <option value="demo-license">DEMO (NOT WORK)</option>
+                        <option value="7days-license">7 DAYS TRIAL</option>
+                        <option value="1month-license">1 MONTH</option>
+                        <option value="3months-license">3 MONTHS</option>
+                        <option value="6months-license">BASIC 6 MONTHS</option>
+                        <option value="1year-license">BASIC 1 YEAR</option>
+                        <option value="Premium-license">PREMIUM LIFETIME</option>
+                    </select>
+                    
+                    <input type="text" id="license-key" placeholder="ENTER LICENSE KEY" disabled>
+                    
+                    <div class="btn-group">
+                        <button id="activate-btn" disabled>ACTIVATE</button>
+                        <button id="shop-btn">BUY LICENSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="verification-animation" class="hidden">
+        <div class="cyber-circle">
+            <div class="inner-circle"></div>
+            <span>VERIFYING</span>
+        </div>
+    </div>
+
+    <div class="corner-logo">
+        <span>FS</span>
+        <div class="pulse"></div>
+    </div>
+
+    <div id="notification-container"></div>
+
+    <script src="assets/js/activation.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
+</body>
+</html>

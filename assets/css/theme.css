@@ -1,0 +1,96 @@
+/* Theme Variables */
+:root {
+    --primary: #00ff9d;
+    --secondary: #00ccff;
+    --accent: #9d4edd;
+    --dark: rgba(10, 10, 26, 0.8);
+    --darker: rgba(5, 5, 15, 0.9);
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --error: #ff4757;
+    --warning: #ffd32d;
+    --success: #00ff9d;
+    --glow: 0 0 15px var(--primary), 0 0 30px rgba(0, 255, 157, 0.3);
+    --text-glow: 0 0 10px var(--primary), 0 0 20px rgba(0, 255, 157, 0.3);
+    --gradient: linear-gradient(135deg, #00ff9d, #00ccff, #9d4edd);
+}
+
+/* White Theme for dropdown */
+body.selecting-license {
+    background: #ffffff !important;
+    transition: background 0.5s ease;
+}
+
+body.selecting-license .glass-container {
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(0, 119, 204, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 119, 204, 0.1);
+}
+
+body.selecting-license .terminal {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+body.selecting-license .terminal-header {
+    background: rgba(0, 119, 204, 0.05);
+    border-bottom: 1px solid rgba(0, 119, 204, 0.1);
+}
+
+body.selecting-license .glitch {
+    color: #0077cc;
+    background: linear-gradient(135deg, #0077cc, #005fa3, #6a0dad);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+body.selecting-license h2 {
+    color: #005fa3;
+    text-shadow: none;
+}
+
+body.selecting-license .corner-logo {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 119, 204, 0.2);
+    color: #0077cc;
+}
+
+body.selecting-license .notification {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 119, 204, 0.2);
+    color: #333;
+}
+
+body.selecting-license .notification-message {
+    color: #666;
+}
+
+body.selecting-license select,
+body.selecting-license input {
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: #333 !important;
+    border: 1px solid rgba(0, 119, 204, 0.2) !important;
+}
+
+body.selecting-license select:focus,
+body.selecting-license input:focus {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-color: #0077cc !important;
+    box-shadow: 0 0 15px rgba(0, 119, 204, 0.2) !important;
+}
+
+body.selecting-license #activate-btn {
+    background: linear-gradient(135deg, #0077cc, #005fa3);
+    color: white;
+}
+
+body.selecting-license #shop-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 119, 204, 0.3);
+    color: #005fa3;
+}
+
+/* Custom select styles for white theme */
+body.selecting-license select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230077cc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
